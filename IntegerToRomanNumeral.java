@@ -2,7 +2,6 @@ import java.util.Scanner;
 class IntegerToRomanNumeral{
 public static void main(String args[]){ 
 Scanner c=new Scanner(System.in);
-//String IntegerToRomanNumeral(int input) {
 int input=c.nextInt();
     if (input < 1 || input > 3999)
         System.out.print("Invalid Roman Number Value");
