@@ -1,0 +1,69 @@
+1) Write a program which will shift the vowels to the place of the next vowel to the right. The last vowel should take the place of the first vowel.
+
+Input:
+TATETOL
+
+Output
+TOTATEL
+
+Input 2
+TAT
+Output
+TAT
+
+Input 3
+TYPL
+Output
+TYPL
+
+Input 4
+TATETO
+TOTATE
+
+
+Input Format
+4
+TATETOL
+TAT
+TYPL
+TATETO
+
+Output
+TOTATEL
+TAT
+TYPL
+TOTATE
+
+
+2) Given a non-negative number n and a value k. Find the k-th smallest number that can be formed using the digits of the given number n. It is guaranteed that the k-th smallest number can be formed. Note that the number could be very large and may not even fit into long long int.
+
+Input:
+
+The first line of input contains an integer T denoting the number of test cases. Then T test cases follow. The first line of each test case contains the integer n.
+
+The second line of each test case contains the integer k. 
+
+Output:
+
+Print the k-th smallest number that can be formed using the digits of the number n for each test case in a new line. 
+
+
+Constraints:
+
+1<= T <=100
+
+1<= N <=101000
+
+1<= K <=10
+
+
+Example:
+Input:
+2
+1234
+2
+36012679802
+5
+Output:
+1243
+10022366897

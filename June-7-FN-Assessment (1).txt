@@ -1,0 +1,204 @@
+1. Given a positive integer n, the problem is to print if the number has first and last bits as the only set bits.
+
+Note : The file/class should be named as "EnclosedByOne" with appropriate file extension.
+
+Conditions : 
+0 <= X <= 99999
+
+Input Format :
+The first line of input consists of an Integer which is X.
+
+Output Format : 
+Print "Yes" if the number has first and last bits as the only set bits else print "No".
+
+Test Case1:
+Input : 9
+Output : Yes
+(9)10 = (1001)2, only the first and
+last bits are set.
+
+Test Case2:
+Input : 15
+Output : No
+(15)10 = (1111)2, except first and last
+there are other bits also which are set.
+
+Test Case3:
+Input : 657
+Output : No
+
+Test Case4:
+Input : 513
+Output : Yes
+
+2. Write a program to find the number of semi-prime numbers within a set of ranges.
+
+A prime is a positive integer X that has exactly two distinct divisors: 1 and X. The first few prime integers are 2, 3, 5, 7, 11 and 13.
+
+A semi-prime is a natural number that is the product of two (not necessarily distinct) prime numbers. The first few semi-primes are 4, 6, 9, 10, 14, 15, 21, 22, 25, 26.
+
+You are given two non-empty arrays P and Q, each consisting of M integers. These arrays represent queries about the number of semi-primes within specified ranges.
+
+Query K requires you to find the number of semi-primes within the range (P[K], Q[K]), where 1 <= P[K] <= Q[K] <= N.
+
+For example, consider an integer N = 26 and arrays P, Q such that:
+P[0] = 1 Q[0] = 26 P[1] = 4 Q[1] = 10 P[2] = 16 Q[2] = 20
+The number of semi-primes within each of these ranges is as follows:
+(1, 26) is 10,
+(4, 10) is 4,
+(16, 20) is 0.
+
+Write an efficient algorithm for the following assumptions:
+N is an integer within the range [1..50,000];
+each element of arrays P, Q is an integer within the range [1..1000];
+P[i] <= Q[i].
+
+Note : The file/class should be named as "SemiPrimeArray" with appropriate file extension.
+
+Input Format : 
+First line of input consists of a single integer 'N' which is the size of the array.
+Next 2*N lines consists of N integers which are part of array P and N integers which are part of array Q.
+
+Output Format : 
+Output consists of a single integer which is the maximum profit that the user can earn.
+
+Test case 1: 
+	4
+	1
+	12
+	34
+	23
+	12
+	23
+	67
+	71
+Output : 
+	4 4 12 16
+
+Test case 2: 
+	3
+	1
+	5
+	20
+	12
+	14
+	23
+Output : 
+	4 4 2
+
+Test case 3: 
+	4
+	6
+	8
+	12
+	26
+	18
+	81
+	70
+	38
+Output : 
+	5 4 24 5
+	
+Test case 4: 
+	4
+	4
+	2
+	5
+	3
+	13
+	7
+	14
+	9
+Output : 
+	4 2 4 3
+
+3. Sorting Elements of an Array by Frequency 
+
+Given an array A[] of integers, sort the array according to frequency of elements. That is elements that have higher frequency come first. If frequencies of two elements are same, then smaller number comes first.
+
+Input:
+The first line of input contains an integer T denoting the number of test cases. The description of T test cases follows. The first line of each test case contains a single integer N denoting the size of array. The second line contains N space-separated integers A1, A2, ..., AN denoting the elements of the array.
+
+Output:
+For each testcase, in a new line, print each sorted array in a seperate line. For each array its numbers should be seperated by space.
+
+Constraints:
+1 ≤ T ≤ 70
+30 ≤ N ≤ 130
+1 ≤ Ai ≤ 60 
+
+Example:
+Input:
+2
+5
+5 5 4 6 4
+5
+9 9 9 2 5
+
+Output:
+4 4 5 5 6
+9 9 9 2 5
+
+Explanation:
+Testcase1: The highest frequency here is 2. Both 5 and 4 have that frequency. Now since the frequencies are same then smaller element comes first. So 4 4 comes first then comes 5 5. Finally comes 6.
+The output is 4 4 5 5 6.
+
+Testcase2: The highest frequency here is 3. The element 9 has the highest frequency. So 9 9 9 comes first. Now both 2 and 5 have same frequency. So we print smaller element first.
+The output is 9 9 9 2 5.
+
+4. Implement strstr manually
+
+Your task is to implement the function strstr. The function takes two strings as arguments (s,x) and  locates the occurrence of the string x in the string s. The function returns and integer denoting the first occurrence of the string x in s.
+
+Note : Save the file / class as “manualSubString” with appropriate file extension.
+
+Input Format:
+The first line of input contains an integer T denoting the no of test cases . Then T test cases follow. Each test case has 2 lines of input, first list the search string s and second line the occurrence of string x
+
+Output Format:
+For each test case, in a new line, output will be an integer denoting the first occurrence of the x in the string s. Return -1 if no match found.
+NOTE: If there is a match on the first element answer should be 0 and not 1 given that array index starts at 0
+
+Constraints:
+1 <= T <= 100
+1<= |s|,|x| <= 1000
+
+Example:
+Input
+2
+ItVACForSuccess	
+Fr
+ITVACForsuccess	
+For
+Output
+-1
+5
+
+Explanation:
+Testcase 1: Fr is not present in the string ItVACForSuccess as substring.
+Testcase 2: For is present as substring in ITVACForsuccess from index 5 given that array index starts at 0.
+
+5. Given a 2D grid of characters, you have to search for all the words in a dictionary by moving only along two directions, either right or down. Print the word if it occurs.
+Sample :
+a	p	o	l
+n	x	g	o
+h	y	i	v
+o	r	s	e
+
+Input 1: 
+van
+
+Output 1: 
+False
+
+Input 2:
+apolo
+
+Output 2:
+True
+
+Input 3:
+give
+
+Output 3:
+True
